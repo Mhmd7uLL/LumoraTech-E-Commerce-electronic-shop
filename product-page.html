@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumora Tech - Product details</title>
+    <link rel="stylesheet" href="style/style-product.css">
+    <link rel="icon" href="assets/navbar-icon/lumoraTech-logo.png" type="image/png">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <div class="store-logo">
+                <img src="assets/navbar-icon/lumoraTech-logo.png" alt="">
+                <div class="firstname"><a href="index.html#home">Lumora</a></div>
+                <div class="lastname"><a href="index.html#home">Tech.</a></div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search here...">
+                <button type="submit">cari</button>
+            </div>
+
+            <div class="account-cart">
+                <a href="system/cart-page.php">
+                    <img id="cart-icon" src="assets/navbar-icon/cart.png" alt="" class="cart-icon">
+                </a>
+                <img src="assets/navbar-icon/anonim-pfp.jpeg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="product-detail">
+            <div class="product-gallery">
+                <img class="main-image" src="..." alt="" id="main-pict">
+
+                <div class="thumbnail-list">
+                    <img class="active" src="" alt="" id="pict">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h2 id="product-name"></h2>
+                <p class="category" id="category"></p>
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>(3 Reviews)</span>
+                    <a href="#">Add Your Review</a>
+                </div>
+                <p class="price" id="price">...</p>
+                <p class="desc" id="desc">
+                    ...
+                </p>
+                <div class="select-group">
+                    <select>
+                        <option>Select Color</option>
+                        <option>White</option>
+                        <option>Black</option>
+                    </select>
+                    <div class="quantity">
+                        <p><b>Jumlah:</b></p>
+                        <button onclick="kurangKuant()">-</button>
+                        <input type="text" value="1" id="value">
+                        <button onclick="tambahKuant()">+</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-cart" id="add-to-cart">+ Add to Cart</button>
+                    <p id="notif" class="notif"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <!--   FOOTER   -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/navbar-icon/lumoraTech-logo.png" alt="">
+                <h1>Lumora Tech.</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#home"><img src="assets/footer-icon/home.png" alt="">Home</a>
+                <a href="#type-prod"><img src="assets/footer-icon/usb-cable.png" alt="">Type</a>
+                <a href="system/cart-page.php"><img src="assets/navbar-icon/cart.png" alt="">Cart</a>
+            </div>
+            <div class="footer-socials">
+                <p>Follow us on:</p>
+                <a href="https://instagram.com/@mhmd7ull"><img src="assets/footer-icon/Instagram.jpeg" alt="">Instagram</a>
+                <a href="https://github.com/Mhmd7uLL"><img src="assets/footer-icon/github.jpeg" alt="">Github</a>
+            </div>
+        </div>
+
+        <p class="footer-text">© 2025 Lumora Tech. All rights reserved.</p>
+     </footer>
+
+    <script src="script/script-product.js"></script>
+</body>
+</html>
