@@ -90,6 +90,6 @@ $cart = $_SESSION['cart'] ?? [];
 
 
     </main>
-    
+    <script src="../script/script-autocount.js"></script>
 </body>
 </html>
