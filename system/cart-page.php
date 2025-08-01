@@ -57,7 +57,9 @@ $cart = $_SESSION['cart'] ?? [];
             <?php else : ?>
                 <?php foreach ($cart as $item) : ?>
                 <div class="cart-item">
-                    <input type="checkbox" checked>
+                    
+                    <!--  CHECKBOX UNTUK MEMILIH ITEM DENGAN MENGAMBIL DATA HARGA DAN JUMLAH PRODUK     --> 
+                    <input type="checkbox" class="item-checkbox" data-price="<?= $item['harga'] * $item['jumlah'] ?>" checked>
                     <img class="product-image" src="../<?= htmlspecialchars($item['gambar']) ?>" alt="<?= htmlspecialchars($item['nama']) ?>">
 
                     <div class="product-info">
@@ -77,7 +79,9 @@ $cart = $_SESSION['cart'] ?? [];
                 <h3>Summary of your order</h3>
                 <div class="summary-row">
                     <span>Total</span>
-                    <span class="summary-total">Rp<?= number_format(array_sum(array_map(fn($item) => $item['harga'] * $item['jumlah'], $cart)), 0, ',', '.') ?></span>
+                    
+                    <!-- TOTAL PRICE AKAN DIUPDATE SECARA OTOMATIS DENGAN MENGGUNAKAN SCRIPT AUTOCOUNT -->
+                    <span id="total-price" class="summary-total">Rp<?= number_format(array_sum(array_map(fn($item) => $item['harga'] * $item['jumlah'], $cart)), 0, ',', '.') ?></span>
                 </div>
                 <button class="checkout-btn">Checkout (<?= count($cart) ?>)</button>
             </div>
