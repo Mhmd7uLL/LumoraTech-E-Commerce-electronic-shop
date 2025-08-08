@@ -20,7 +20,7 @@ LumoraTech E-Commerce Electronic Shop adalah sebuah aplikasi web e-commerce untu
 ├── assets/            # File gambar, ikon, dan aset statis lainnya
 ├── style/             # Stylesheets (CSS)
 ├── script/            # Script JavaScript
-├── system/            # File PHP untuk koneksi database, helper, dll
+├── system/            # File PHP untuk koneksi button add to cart pada produk ke cart-page.php
 ├── index.html         # Halaman utama
 ├── type-page.html     # Halaman web untuk kategori produk
 ├── product-page.html  # Halaman detail produk yang dipilih            
